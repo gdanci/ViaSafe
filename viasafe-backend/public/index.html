@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>ViaSafe: safer routes for women in Cluj-Napoca</title>
+  <meta name="description" content="See which parts of Cluj-Napoca feel safe, find a safer walking route and report anything suspicious so other women can avoid it." />
+  <meta name="theme-color" content="#F7EFE6" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%229%22 fill=%22%239C5446%22/%3E%3Cpath d=%22M16 15.2C14 8.2 7.6 6.2 6 9.6c-1.4 3 1.4 6.6 10 6.6z%22 fill=%22%23fff%22/%3E%3Cpath d=%22M16 15.2c2-7 8.4-9 10-5.6 1.4 3-1.4 6.6-10 6.6z%22 fill=%22%23fff%22/%3E%3Cpath d=%22M16 16.8c-4.6.2-8.6 1.8-8.2 5.2.3 2.6 4.6 3.2 8.2-2.4z%22 fill=%22%23fff%22 fill-opacity=%22.92%22/%3E%3Cpath d=%22M16 16.8c4.6.2 8.6 1.8 8.2 5.2-.3 2.6-4.6 3.2-8.2-2.4z%22 fill=%22%23fff%22 fill-opacity=%22.92%22/%3E%3Ccircle cx=%2210.6%22 cy=%2211.4%22 r=%221.7%22 fill=%22%23F2C1B5%22/%3E%3Ccircle cx=%2221.4%22 cy=%2211.4%22 r=%221.7%22 fill=%22%23F2C1B5%22/%3E%3Crect x=%2215.1%22 y=%2210.2%22 width=%221.8%22 height=%2212.2%22 rx=%22.9%22 fill=%22%23fff%22/%3E%3Cpath d=%22M15.6 10.6c-.4-2-1.6-3.4-3-4M16.4 10.6c.4-2 1.6-3.4 3-4%22 fill=%22none%22 stroke=%22%23fff%22 stroke-width=%221.2%22 stroke-linecap=%22round%22/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css" />
+  <link rel="stylesheet" href="app.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="panel" id="panel" aria-label="ViaSafe controls">
+      <button class="sheet-handle" id="sheetHandle" type="button" aria-expanded="true" aria-controls="panelBody">
+        <span class="sheet-grip" aria-hidden="true"></span>
+        <span class="sr-only">Show or hide the panel</span>
+      </button>
+
+      <header class="brand">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+          <rect width="32" height="32" rx="9" fill="currentColor"/>
+          <path d="M16 15.2C14 8.2 7.6 6.2 6 9.6c-1.4 3 1.4 6.6 10 6.6z" fill="#fff"/>
+          <path d="M16 15.2c2-7 8.4-9 10-5.6 1.4 3-1.4 6.6-10 6.6z" fill="#fff"/>
+          <path d="M16 16.8c-4.6.2-8.6 1.8-8.2 5.2.3 2.6 4.6 3.2 8.2-2.4z" fill="#fff" fill-opacity=".92"/>
+          <path d="M16 16.8c4.6.2 8.6 1.8 8.2 5.2-.3 2.6-4.6 3.2-8.2-2.4z" fill="#fff" fill-opacity=".92"/>
+          <circle cx="10.6" cy="11.4" r="1.7" fill="#F2C1B5"/>
+          <circle cx="21.4" cy="11.4" r="1.7" fill="#F2C1B5"/>
+          <rect x="15.1" y="10.2" width="1.8" height="12.2" rx=".9" fill="#fff"/>
+          <path d="M15.6 10.6c-.4-2-1.6-3.4-3-4M16.4 10.6c.4-2 1.6-3.4 3-4" fill="none" stroke="#fff" stroke-width="1.2" stroke-linecap="round"/>
+        </svg>
+        <div>
+          <h1 class="brand-name">ViaSafe</h1>
+          <p class="brand-sub">Safer routes for women, day and night</p>
+        </div>
+      </header>
+
+      <div class="tabs" role="tablist" aria-label="Sections">
+        <button class="tab is-active" role="tab" id="tab-map" aria-selected="true" aria-controls="view-map" data-tab="map">Map</button>
+        <button class="tab" role="tab" id="tab-route" aria-selected="false" aria-controls="view-route" data-tab="route" tabindex="-1">Route</button>
+        <button class="tab" role="tab" id="tab-report" aria-selected="false" aria-controls="view-report" data-tab="report" tabindex="-1">Report</button>
+        <button class="tab" role="tab" id="tab-feed" aria-selected="false" aria-controls="view-feed" data-tab="feed" tabindex="-1">Feed</button>
+        <button class="tab" role="tab" id="tab-havens" aria-selected="false" aria-controls="view-havens" data-tab="havens" tabindex="-1">Havens</button>
+      </div>
+
+      <div class="panel-body" id="panelBody">
+        <div class="notice" id="notice" role="alert" hidden></div>
+
+        <!-- MAP -->
+        <section class="view is-active" id="view-map" role="tabpanel" aria-labelledby="tab-map">
+          <h2 class="h2 first">Safety map</h2>
+          <p class="lede" id="mapSummary">Loading the city…</p>
+
+          <div class="toggles">
+            <label class="switch"><input type="checkbox" id="toggleAreas" checked /><span>Neighbourhood zones</span></label>
+            <label class="switch"><input type="checkbox" id="toggleReports" checked /><span>Reported pins</span></label>
+          </div>
+
+          <div class="card legend" aria-label="Map legend">
+            <h3 class="h3">How to read the map</h3>
+            <ul class="legend-list">
+              <li><span class="swatch swatch-safe"></span>Safe</li>
+              <li><span class="swatch swatch-caution"></span>Caution</li>
+              <li><span class="swatch swatch-warning"></span>Warning</li>
+              <li><span class="swatch swatch-danger"></span>Danger</li>
+              <li><span class="swatch swatch-nodata"></span>No data yet</li>
+              <li><span class="swatch swatch-night"></span>Dashed edge: gets worse after dark</li>
+            </ul>
+            <ul class="legend-list legend-pins">
+              <li><span class="pin-sample pin-harassment"></span>Harassment</li>
+              <li><span class="pin-sample pin-suspicious"></span>Suspicious group</li>
+              <li><span class="pin-sample pin-lighting"></span>Poor lighting</li>
+              <li><span class="pin-sample pin-isolated"></span>Isolated area</li>
+              <li><span class="pin-sample pin-other"></span>Other</li>
+            </ul>
+            <p class="hint">Neighbourhoods start from a demo rating. Mapped data replaces it, and community reports from the last 7 days raise it.</p>
+          </div>
+        </section>
+
+        <!-- ROUTE -->
+        <section class="view" id="view-route" role="tabpanel" aria-labelledby="tab-route" hidden>
+          <h2 class="h2 first">Find safer route</h2>
+          <p class="lede">Walking routes that steer around places reported in the last 2 hours.</p>
+
+          <form id="routeForm" class="form" novalidate>
+            <div class="field">
+              <label for="fromInput">Start</label>
+              <div class="field-row">
+                <input id="fromInput" type="text" autocomplete="off" placeholder="Address or place" aria-controls="fromResults" />
+                <button type="button" class="btn-quiet" data-locate="from">Use my location</button>
+                <button type="button" class="btn-quiet" data-pick="from">Set start on map</button>
+              </div>
+              <ul class="suggest" id="fromResults" hidden></ul>
+            </div>
+
+            <div class="field">
+              <label for="toInput">Destination</label>
+              <div class="field-row">
+                <input id="toInput" type="text" autocomplete="off" placeholder="Address or place" aria-controls="toResults" />
+                <button type="button" class="btn-quiet" data-pick="to">Set end on map</button>
+              </div>
+              <ul class="suggest" id="toResults" hidden></ul>
+            </div>
+
+            <div class="btn-row">
+              <button type="submit" class="btn-main" id="routeBtn">Get route</button>
+              <button type="button" class="btn-quiet" id="clearRoute">Clear route</button>
+            </div>
+          </form>
+
+          <div class="result" id="routeResult" hidden></div>
+        </section>
+
+        <!-- REPORT -->
+        <section class="view" id="view-report" role="tabpanel" aria-labelledby="tab-report" hidden>
+          <h2 class="h2 first">Report something</h2>
+          <p class="lede">Help other women avoid unsafe places.</p>
+
+          <form id="reportForm" class="form" novalidate>
+            <fieldset class="field chips">
+              <legend>Pinpoint type</legend>
+              <label class="chip"><input type="radio" name="category" value="Suspicious group ⚠️" checked /><span>Suspicious group ⚠️</span></label>
+              <label class="chip"><input type="radio" name="category" value="Harassment incident, temporary danger 🚨" /><span>Harassment incident, temporary danger 🚨</span></label>
+              <label class="chip"><input type="radio" name="category" value="Poor lighting 🌙" /><span>Poor lighting 🌙</span></label>
+              <label class="chip"><input type="radio" name="category" value="Isolated area 📍" /><span>Isolated area 📍</span></label>
+              <label class="chip"><input type="radio" name="category" value="Other" /><span>Other</span></label>
+            </fieldset>
+
+            <div class="field">
+              <label for="reportTitle">Short title</label>
+              <input id="reportTitle" type="text" maxlength="80" placeholder="For example: Group blocking the footpath" required />
+            </div>
+
+            <div class="field">
+              <label for="reportDesc">Description <span class="optional">(optional)</span></label>
+              <textarea id="reportDesc" rows="3" maxlength="400" placeholder="Describe what happened or what you saw"></textarea>
+            </div>
+
+            <div class="field">
+              <span class="label">Location</span>
+              <div class="field-row">
+                <button type="button" class="btn-quiet" data-locate="report">Use current location</button>
+                <button type="button" class="btn-quiet" data-pick="report">Mark location on map</button>
+              </div>
+              <p class="hint" id="reportWhere">No place chosen yet.</p>
+            </div>
+
+            <label class="switch"><input type="checkbox" id="reportAnon" checked /><span>Report anonymously</span></label>
+
+            <button type="submit" class="btn-main" id="reportBtn">Submit report</button>
+            <p class="hint">Reports of suspicious groups, harassment, poor lighting and isolated areas are avoided in new routes for 2 hours.</p>
+          </form>
+        </section>
+
+        <!-- FEED -->
+        <section class="view" id="view-feed" role="tabpanel" aria-labelledby="tab-feed" hidden>
+          <h2 class="h2 first">Safety feed</h2>
+          <p class="lede">Recent reports around you.</p>
+          <ul class="report-list" id="reportList"></ul>
+        </section>
+
+        <!-- SAFE HAVENS -->
+        <section class="view" id="view-havens" role="tabpanel" aria-labelledby="tab-havens" hidden>
+          <h2 class="h2 first">Safe havens</h2>
+          <p class="lede">We guide you to open, trusted places. These open Google Maps near Cluj-Napoca.</p>
+          <ul class="haven-list">
+            <li><a class="haven" href="https://www.google.com/maps/search/?api=1&amp;query=hospital%20near%20Cluj-Napoca" target="_blank" rel="noopener">Hospitals</a></li>
+            <li><a class="haven" href="https://www.google.com/maps/search/?api=1&amp;query=police%20station%20near%20Cluj-Napoca" target="_blank" rel="noopener">Police stations</a></li>
+            <li><a class="haven" href="https://www.google.com/maps/search/?api=1&amp;query=24%2F7%20pharmacy%20near%20Cluj-Napoca" target="_blank" rel="noopener">24/7 pharmacies</a></li>
+            <li><a class="haven" href="https://www.google.com/maps/search/?api=1&amp;query=24%2F7%20coffee%20shop%20near%20Cluj-Napoca" target="_blank" rel="noopener">24/7 coffee shops</a></li>
+          </ul>
+        </section>
+
+        <p class="emergency">Not for emergencies. Call <strong>112</strong> if you are in danger.</p>
+      </div>
+    </aside>
+
+    <main class="map-wrap">
+      <div id="map" aria-label="Map of Cluj-Napoca showing safer and less safe areas"></div>
+      <div class="pick-banner" id="pickBanner" hidden>
+        <span id="pickText">Tap the map to choose a place</span>
+        <button type="button" id="pickCancel">Cancel</button>
+      </div>
+      <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+    </main>
+  </div>
+
+  <script src="vendor/leaflet/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

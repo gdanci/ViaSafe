@@ -1,0 +1,234 @@
+[
+ {
+  "name": "Andrei Mureșanu",
+  "lat": 46.76184,
+  "lng": 23.60956,
+  "reach": 920,
+  "demo": "SAFE",
+  "demoNight": false
+ },
+ {
+  "name": "Aurel Vlaicu",
+  "lat": 46.78098,
+  "lng": 23.63424,
+  "reach": 800,
+  "demo": "CAUTION",
+  "demoNight": false
+ },
+ {
+  "name": "Becaș",
+  "lat": 46.74023,
+  "lng": 23.61371,
+  "reach": 1500,
+  "demo": "SAFE",
+  "demoNight": false
+ },
+ {
+  "name": "Borhanci",
+  "lat": 46.74688,
+  "lng": 23.6387,
+  "reach": 1500,
+  "demo": "SAFE",
+  "demoNight": false
+ },
+ {
+  "name": "Bulgaria",
+  "lat": 46.78892,
+  "lng": 23.61849,
+  "reach": 1500,
+  "demo": "CAUTION",
+  "demoNight": false
+ },
+ {
+  "name": "Bună Ziua",
+  "lat": 46.74981,
+  "lng": 23.59846,
+  "reach": 1070,
+  "demo": "SAFE",
+  "demoNight": false
+ },
+ {
+  "name": "Centru",
+  "lat": 46.76876,
+  "lng": 23.59009,
+  "reach": 1500,
+  "demo": "CAUTION",
+  "demoNight": true
+ },
+ {
+  "name": "Cetățuie",
+  "lat": 46.77365,
+  "lng": 23.58299,
+  "reach": 800,
+  "demo": "SAFE",
+  "demoNight": false
+ },
+ {
+  "name": "Cordoș",
+  "lat": 46.7858,
+  "lng": 23.55468,
+  "reach": 800,
+  "demo": "SAFE",
+  "demoNight": false
+ },
+ {
+  "name": "Dâmbul Rotund",
+  "lat": 46.78754,
+  "lng": 23.56741,
+  "reach": 1500,
+  "demo": "CAUTION",
+  "demoNight": false
+ },
+ {
+  "name": "Europa",
+  "lat": 46.74488,
+  "lng": 23.58572,
+  "reach": 750,
+  "demo": "SAFE",
+  "demoNight": false
+ },
+ {
+  "name": "Făget",
+  "lat": 46.72467,
+  "lng": 23.58048,
+  "reach": 750,
+  "demo": "SAFE",
+  "demoNight": false
+ },
+ {
+  "name": "Gheorgheni",
+  "lat": 46.76635,
+  "lng": 23.61682,
+  "reach": 1450,
+  "demo": "CAUTION",
+  "demoNight": false
+ },
+ {
+  "name": "Grigorescu",
+  "lat": 46.76804,
+  "lng": 23.55354,
+  "reach": 1500,
+  "demo": "CAUTION",
+  "demoNight": true
+ },
+ {
+  "name": "Gruia",
+  "lat": 46.77715,
+  "lng": 23.57683,
+  "reach": 1000,
+  "demo": "CAUTION",
+  "demoNight": true
+ },
+ {
+  "name": "Grădinile Mănăștur",
+  "lat": 46.76183,
+  "lng": 23.56822,
+  "reach": 800,
+  "demo": "CAUTION",
+  "demoNight": true
+ },
+ {
+  "name": "Iris",
+  "lat": 46.79511,
+  "lng": 23.60351,
+  "reach": 1500,
+  "demo": "CAUTION",
+  "demoNight": true
+ },
+ {
+  "name": "Mănăștur",
+  "lat": 46.75542,
+  "lng": 23.55659,
+  "reach": 1500,
+  "demo": "WARNING",
+  "demoNight": true
+ },
+ {
+  "name": "Mărăști",
+  "lat": 46.78046,
+  "lng": 23.61251,
+  "reach": 1240,
+  "demo": "CAUTION",
+  "demoNight": true
+ },
+ {
+  "name": "Plopilor",
+  "lat": 46.7642,
+  "lng": 23.56539,
+  "reach": 1010,
+  "demo": "CAUTION",
+  "demoNight": false
+ },
+ {
+  "name": "Someșeni",
+  "lat": 46.78881,
+  "lng": 23.65099,
+  "reach": 1500,
+  "demo": "CAUTION",
+  "demoNight": true
+ },
+ {
+  "name": "Sopor",
+  "lat": 46.76126,
+  "lng": 23.65442,
+  "reach": 1500,
+  "demo": "SAFE",
+  "demoNight": false
+ },
+ {
+  "name": "Zona Industrială Est",
+  "lat": 46.79595,
+  "lng": 23.63794,
+  "reach": 800,
+  "demo": "WARNING",
+  "demoNight": true
+ },
+ {
+  "name": "Zona Industrială Vest",
+  "lat": 46.78366,
+  "lng": 23.53599,
+  "reach": 800,
+  "demo": "WARNING",
+  "demoNight": true
+ },
+ {
+  "name": "Zorilor",
+  "lat": 46.75556,
+  "lng": 23.58579,
+  "reach": 1010,
+  "demo": "SAFE",
+  "demoNight": false
+ },
+ {
+  "name": "Între Lacuri",
+  "lat": 46.77636,
+  "lng": 23.62566,
+  "reach": 1050,
+  "demo": "SAFE",
+  "demoNight": false
+ },
+ {
+  "name": "Pata Rât",
+  "lat": 46.77417,
+  "lng": 23.68971,
+  "reach": 600,
+  "demo": "WARNING",
+  "demoNight": true
+ },
+ {
+  "name": "Colonia Fânațe",
+  "lat": 46.82694,
+  "lng": 23.62874,
+  "reach": 700,
+  "demo": "CAUTION",
+  "demoNight": false
+ },
+ {
+  "name": "Valea Chintăului",
+  "lat": 46.81109,
+  "lng": 23.60354,
+  "reach": 700,
+  "demo": "SAFE",
+  "demoNight": false
+ }
+]

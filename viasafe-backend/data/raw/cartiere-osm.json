@@ -1,0 +1,814 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-10-10T11:47:36Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 90386798,
+  "lat": 46.7888050,
+  "lon": 23.6509907,
+  "tags": {
+    "name": "Someșeni",
+    "name:de": "Mikelsdorf",
+    "name:hu": "Szamosfalva",
+    "place": "suburb",
+    "wikidata": "Q846416"
+  }
+},
+{
+  "type": "node",
+  "id": 1281230764,
+  "lat": 46.7555595,
+  "lon": 23.5857936,
+  "tags": {
+    "name": "Zorilor",
+    "name:hu": "Hajnal negyed",
+    "old_name": "Sinuța",
+    "place": "suburb",
+    "wikidata": "Q1032736"
+  }
+},
+{
+  "type": "node",
+  "id": 1281230772,
+  "lat": 46.7680429,
+  "lon": 23.5535428,
+  "tags": {
+    "addr:city": "Cluj-Napoca",
+    "addr:country": "RO",
+    "name": "Grigorescu",
+    "name:hu": "Donát negyed",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 1281230781,
+  "lat": 46.7618391,
+  "lon": 23.6095578,
+  "tags": {
+    "name": "Andrei Mureșanu",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 1281230785,
+  "lat": 46.8110943,
+  "lon": 23.6035442,
+  "tags": {
+    "name": "Valea Chintăului",
+    "name:hu": "Kajántói-völgy",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 1281230801,
+  "lat": 46.7889169,
+  "lon": 23.6184909,
+  "tags": {
+    "name": "Bulgaria",
+    "name:hu": "Bulgária negyed",
+    "place": "suburb",
+    "wikidata": "Q3656821"
+  }
+},
+{
+  "type": "node",
+  "id": 1281230853,
+  "lat": 46.7858012,
+  "lon": 23.5546835,
+  "tags": {
+    "name": "Cordoș",
+    "name:hu": "Kardosfalva",
+    "name:ro": "Cordoș",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 1281230917,
+  "lat": 46.7618347,
+  "lon": 23.5682183,
+  "tags": {
+    "addr:city": "Cluj-Napoca",
+    "addr:country": "RO",
+    "name": "Grădinile Mănăștur",
+    "name:hu": "Monostori kertek",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 1281230935,
+  "lat": 46.7959456,
+  "lon": 23.6379444,
+  "tags": {
+    "name": "Zona Industrială Est",
+    "name:de": "Industriegebiet Ost",
+    "name:en": "Eastern Industrial Area",
+    "name:hu": "Keleti Ipari Övezet",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 1281414327,
+  "lat": 46.7836554,
+  "lon": 23.5359902,
+  "tags": {
+    "name": "Zona Industrială Vest",
+    "name:de": "Industriegebiet West",
+    "name:en": "Western Industrial Area",
+    "name:hu": "Nyugati ipari övezet",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 1281414358,
+  "lat": 46.7809806,
+  "lon": 23.6342383,
+  "tags": {
+    "name": "Aurel Vlaicu",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 1281414370,
+  "lat": 46.7771503,
+  "lon": 23.5768325,
+  "tags": {
+    "name": "Gruia",
+    "name:hu": "Fellegvár",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 1281414390,
+  "lat": 46.7498055,
+  "lon": 23.5984619,
+  "tags": {
+    "name": "Bună Ziua",
+    "name:hu": "Bunezoá",
+    "name:ro": "Bună Ziua",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 1281414403,
+  "lat": 46.7875377,
+  "lon": 23.5674139,
+  "tags": {
+    "name": "Dâmbul Rotund",
+    "name:hu": "Kerekdomb",
+    "name:ro": "Dâmbul Rotund",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 1281414411,
+  "lat": 46.7951071,
+  "lon": 23.6035121,
+  "tags": {
+    "name": "Iris",
+    "name:hu": "Írisz",
+    "name:ro": "Iris",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 1281414430,
+  "lat": 46.7804568,
+  "lon": 23.6125126,
+  "tags": {
+    "name": "Mărăști",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 1281414445,
+  "lat": 46.7763627,
+  "lon": 23.6256649,
+  "tags": {
+    "name": "Între Lacuri",
+    "name:hu": "Tóköz",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 1290109768,
+  "lat": 46.7246711,
+  "lon": 23.5804800,
+  "tags": {
+    "name": "Făget",
+    "name:hu": "Bükki lakótelep",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 1290109777,
+  "lat": 46.7468793,
+  "lon": 23.6386995,
+  "tags": {
+    "name": "Borhanci",
+    "name:hu": "Borháncs",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 1290109786,
+  "lat": 46.7402343,
+  "lon": 23.6137116,
+  "tags": {
+    "name": "Becaș",
+    "name:hu": "Békás",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 1290109795,
+  "lat": 46.7448828,
+  "lon": 23.5857190,
+  "tags": {
+    "alt_name": "Zorilor Sud",
+    "name": "Europa",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 1707942367,
+  "lat": 46.7554185,
+  "lon": 23.5565892,
+  "tags": {
+    "addr:city": "Cluj-Napoca",
+    "addr:country": "RO",
+    "check_date": "2024-04-10",
+    "name": "Mănăștur",
+    "name:de": "Abtsdorf",
+    "name:hu": "Kolozsmonostor",
+    "place": "suburb",
+    "wikidata": "Q368523"
+  }
+},
+{
+  "type": "node",
+  "id": 1725554648,
+  "lat": 46.8269378,
+  "lon": 23.6287436,
+  "tags": {
+    "name": "Colonia Fânațe",
+    "name:hu": "Szénafüvek",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 1804265713,
+  "lat": 46.7612568,
+  "lon": 23.6544189,
+  "tags": {
+    "name": "Sopor",
+    "name:hu": "Szopori negyed",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2726666500,
+  "lat": 46.7663539,
+  "lon": 23.6168223,
+  "tags": {
+    "addr:city": "Cluj-Napoca",
+    "addr:country": "RO",
+    "name": "Gheorgheni",
+    "place": "suburb",
+    "wikidata": "Q590050"
+  }
+},
+{
+  "type": "node",
+  "id": 5848620595,
+  "lat": 46.7687648,
+  "lon": 23.5900905,
+  "tags": {
+    "check_date": "2024-03-30",
+    "name": "Centru",
+    "name:en": "Center",
+    "name:hu": "Belváros",
+    "name:ro": "Centru",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 8276571724,
+  "lat": 46.7732139,
+  "lon": 23.6731200,
+  "tags": {
+    "name": "Dealul Borzaș",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 8882968320,
+  "lat": 46.7736490,
+  "lon": 23.5829929,
+  "tags": {
+    "name": "Cetățuie",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 9468480762,
+  "lat": 46.7389891,
+  "lon": 23.4752769,
+  "tags": {
+    "name": "Șesul de Sus",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 9468480763,
+  "lat": 46.7385447,
+  "lon": 23.4868604,
+  "tags": {
+    "name": "Cetatea Fetei",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 10804845853,
+  "lat": 46.8113920,
+  "lon": 23.6994323,
+  "tags": {
+    "name": "Colonia Valea Caldă",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 11071715932,
+  "lat": 46.7401282,
+  "lon": 23.5320957,
+  "tags": {
+    "name": "Valea Gârbăului",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 11364321482,
+  "lat": 46.7741712,
+  "lon": 23.6897147,
+  "tags": {
+    "name": "Pata Rât",
+    "name:hu": "Pata Rét",
+    "name:ro": "Pata Rât",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 11368142225,
+  "lat": 46.7641969,
+  "lon": 23.5653934,
+  "tags": {
+    "name": "Plopilor",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 11446059040,
+  "lat": 46.7448854,
+  "lon": 23.5284888,
+  "tags": {
+    "name": "Răzoare",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 11459460481,
+  "lat": 46.7691905,
+  "lon": 23.6238200,
+  "tags": {
+    "name": "Micro 1",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 11459460482,
+  "lat": 46.7666112,
+  "lon": 23.6233408,
+  "tags": {
+    "name": "Micro 2",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 11459460483,
+  "lat": 46.7631031,
+  "lon": 23.6178086,
+  "tags": {
+    "name": "Micro 3",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 11459460484,
+  "lat": 46.7576677,
+  "lon": 23.6161594,
+  "tags": {
+    "name": "Micro 4",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12175451648,
+  "lat": 46.8413793,
+  "lon": 23.7212624,
+  "tags": {
+    "ele": "350",
+    "name": "Tarcea",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "way",
+  "id": 669521911,
+  "bounds": {
+    "minlat": 46.7848769,
+    "minlon": 23.5870770,
+    "maxlat": 46.8047527,
+    "maxlon": 23.6650425
+  },
+  "tags": {
+    "name": "Iris",
+    "place": "suburb"
+  }
+},
+{
+  "type": "way",
+  "id": 669531060,
+  "bounds": {
+    "minlat": 46.7826456,
+    "minlon": 23.5970346,
+    "maxlat": 46.7927583,
+    "maxlon": 23.6398011
+  },
+  "tags": {
+    "name": "Bulgaria",
+    "place": "suburb"
+  }
+},
+{
+  "type": "way",
+  "id": 669535695,
+  "bounds": {
+    "minlat": 46.7690614,
+    "minlon": 23.6383483,
+    "maxlat": 46.7949389,
+    "maxlon": 23.7017956
+  },
+  "tags": {
+    "name": "Someșeni",
+    "place": "suburb"
+  }
+},
+{
+  "type": "way",
+  "id": 669537417,
+  "bounds": {
+    "minlat": 46.7729329,
+    "minlon": 23.6189489,
+    "maxlat": 46.7845480,
+    "maxlon": 23.6465958
+  },
+  "tags": {
+    "name": "Între Lacuri",
+    "place": "suburb"
+  }
+},
+{
+  "type": "way",
+  "id": 669541500,
+  "bounds": {
+    "minlat": 46.7716320,
+    "minlon": 23.5929688,
+    "maxlat": 46.7859894,
+    "maxlon": 23.6254546
+  },
+  "tags": {
+    "name": "Mărăști",
+    "name:ro": "Mărăști",
+    "place": "suburb"
+  }
+},
+{
+  "type": "way",
+  "id": 669544253,
+  "bounds": {
+    "minlat": 46.7489100,
+    "minlon": 23.6243812,
+    "maxlat": 46.7774623,
+    "maxlon": 23.6805247
+  },
+  "tags": {
+    "name": "Sopor",
+    "place": "suburb"
+  }
+},
+{
+  "type": "way",
+  "id": 669549460,
+  "bounds": {
+    "minlat": 46.7553600,
+    "minlon": 23.6010422,
+    "maxlat": 46.7777249,
+    "maxlon": 23.6390251
+  },
+  "tags": {
+    "name": "Gheorgheni",
+    "place": "suburb",
+    "wikidata": "Q590050"
+  }
+},
+{
+  "type": "way",
+  "id": 669551191,
+  "bounds": {
+    "minlat": 46.7537628,
+    "minlon": 23.5909485,
+    "maxlat": 46.7677180,
+    "maxlon": 23.6151327
+  },
+  "tags": {
+    "name": "Andrei Mureșanu",
+    "place": "suburb"
+  }
+},
+{
+  "type": "way",
+  "id": 669553748,
+  "bounds": {
+    "minlat": 46.7581465,
+    "minlon": 23.5728554,
+    "maxlat": 46.7859894,
+    "maxlon": 23.6048135
+  },
+  "tags": {
+    "name": "Centru",
+    "place": "suburb"
+  }
+},
+{
+  "type": "way",
+  "id": 669555440,
+  "bounds": {
+    "minlat": 46.7719426,
+    "minlon": 23.5612813,
+    "maxlat": 46.7842938,
+    "maxlon": 23.5876208
+  },
+  "tags": {
+    "name": "Gruia",
+    "name:ro": "Gruia",
+    "place": "suburb",
+    "wikidata": "Q3118185"
+  }
+},
+{
+  "type": "way",
+  "id": 669572408,
+  "bounds": {
+    "minlat": 46.7618893,
+    "minlon": 23.5297345,
+    "maxlat": 46.7782071,
+    "maxlon": 23.5819166
+  },
+  "tags": {
+    "name": "Grigorescu",
+    "place": "suburb"
+  }
+},
+{
+  "type": "way",
+  "id": 669573736,
+  "bounds": {
+    "minlat": 46.7806017,
+    "minlon": 23.5373006,
+    "maxlat": 46.7996259,
+    "maxlon": 23.5937986
+  },
+  "tags": {
+    "name": "Dâmbul Rotund",
+    "place": "suburb"
+  }
+},
+{
+  "type": "way",
+  "id": 669575587,
+  "bounds": {
+    "minlat": 46.7602935,
+    "minlon": 23.5499355,
+    "maxlat": 46.7701324,
+    "maxlon": 23.5763879
+  },
+  "tags": {
+    "name": "Plopilor",
+    "place": "suburb"
+  }
+},
+{
+  "type": "way",
+  "id": 669576874,
+  "bounds": {
+    "minlat": 46.7324453,
+    "minlon": 23.5388456,
+    "maxlat": 46.7646586,
+    "maxlon": 23.5834799
+  },
+  "tags": {
+    "name": "Mănăștur",
+    "place": "suburb"
+  }
+},
+{
+  "type": "way",
+  "id": 669578238,
+  "bounds": {
+    "minlat": 46.7482964,
+    "minlon": 23.5712299,
+    "maxlat": 46.7635509,
+    "maxlon": 23.5976676
+  },
+  "tags": {
+    "name": "Zorilor",
+    "name:ro": "Zorilor",
+    "place": "suburb"
+  }
+},
+{
+  "type": "way",
+  "id": 669871297,
+  "bounds": {
+    "minlat": 46.7375741,
+    "minlon": 23.5769328,
+    "maxlat": 46.7511430,
+    "maxlon": 23.5933183
+  },
+  "tags": {
+    "name": "Europa",
+    "place": "suburb"
+  }
+},
+{
+  "type": "way",
+  "id": 669871521,
+  "bounds": {
+    "minlat": 46.7381879,
+    "minlon": 23.5912177,
+    "maxlat": 46.7569309,
+    "maxlon": 23.6192755
+  },
+  "tags": {
+    "name": "Bună Ziua",
+    "place": "suburb"
+  }
+},
+{
+  "type": "way",
+  "id": 669874484,
+  "bounds": {
+    "minlat": 46.7291638,
+    "minlon": 23.6001103,
+    "maxlat": 46.7571702,
+    "maxlon": 23.6327394
+  },
+  "tags": {
+    "name": "Becaș",
+    "place": "suburb"
+  }
+},
+{
+  "type": "way",
+  "id": 669877594,
+  "bounds": {
+    "minlat": 46.7347250,
+    "minlon": 23.6154800,
+    "maxlat": 46.7578990,
+    "maxlon": 23.6579718
+  },
+  "tags": {
+    "name": "Borhanci",
+    "place": "suburb"
+  }
+},
+{
+  "type": "way",
+  "id": 669878314,
+  "bounds": {
+    "minlat": 46.7277137,
+    "minlon": 23.5830863,
+    "maxlat": 46.7411767,
+    "maxlon": 23.6016184
+  },
+  "tags": {
+    "name": "Făget",
+    "place": "suburb"
+  }
+},
+{
+  "type": "way",
+  "id": 965920788,
+  "bounds": {
+    "minlat": 46.7399272,
+    "minlon": 23.4709493,
+    "maxlat": 46.7421750,
+    "maxlon": 23.4749498
+  },
+  "tags": {
+    "landuse": "residential",
+    "name": "Cartier Terra",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "way",
+  "id": 1025546950,
+  "bounds": {
+    "minlat": 46.8364128,
+    "minlon": 23.7125836,
+    "maxlat": 46.8460855,
+    "maxlon": 23.7277410
+  },
+  "tags": {
+    "name": "Tarcea",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "way",
+  "id": 1433622105,
+  "bounds": {
+    "minlat": 46.7645157,
+    "minlon": 23.5652357,
+    "maxlat": 46.7672447,
+    "maxlon": 23.5711069
+  },
+  "tags": {
+    "boundary": "place",
+    "landuse": "residential",
+    "name": "Între Ape",
+    "name:hu": "Kétvizközt",
+    "place": "suburb"
+  }
+},
+{
+  "type": "relation",
+  "id": 18936990,
+  "bounds": {
+    "minlat": 46.7719426,
+    "minlon": 23.5612813,
+    "maxlat": 46.7842938,
+    "maxlon": 23.5876208
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "Gruia",
+    "place": "suburb",
+    "type": "boundary",
+    "wikidata": "Q3118185"
+  }
+}
+
+  ]
+}

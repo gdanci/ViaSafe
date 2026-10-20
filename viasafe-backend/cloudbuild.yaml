@@ -1,0 +1,33 @@
+steps:
+  # Build the Docker image using the Dockerfile in the repo
+  - name: gcr.io/cloud-builders/docker
+    id: Build image
+    args:
+      - build
+      - "-t"
+      - "${_REGION}-docker.pkg.dev/${PROJECT_ID}/${_REPOSITORY}/${_IMAGE_NAME}:${SHORT_SHA}"
+      - .
+
+  # Push the image to Artifact Registry
+  - name: gcr.io/cloud-builders/docker
+    id: Push image
+    args:
+      - push
+      - "${_REGION}-docker.pkg.dev/${PROJECT_ID}/${_REPOSITORY}/${_IMAGE_NAME}:${SHORT_SHA}"
+
+images:
+  - "${_REGION}-docker.pkg.dev/${PROJECT_ID}/${_REPOSITORY}/${_IMAGE_NAME}:${SHORT_SHA}"
+
+substitutions:
+  # Customize these for your environment.
+  # Example: us-central1, europe-west1, etc.
+  _REGION: us-central1
+
+  # Name of your Artifact Registry repository (must exist beforehand)
+  _REPOSITORY: viasafe-backend
+
+  # Logical image name within the repository
+  _IMAGE_NAME: viasafe-backend
+
+options:
+  logging: CLOUD_LOGGING_ONLY
