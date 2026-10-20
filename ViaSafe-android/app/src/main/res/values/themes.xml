@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.ViaSafe" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/viasafe_accent</item>
+        <item name="colorPrimaryVariant">@color/viasafe_accent_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/viasafe_card</item>
+        <item name="colorSecondaryVariant">@color/viasafe_border</item>
+        <item name="colorOnSecondary">@color/viasafe_text</item>
+        <item name="android:windowBackground">@color/viasafe_bg</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/viasafe_bg</item>
+    </style>
+</resources>
+

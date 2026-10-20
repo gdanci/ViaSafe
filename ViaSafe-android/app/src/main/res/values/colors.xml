@@ -1,0 +1,23 @@
+<resources>
+    <!-- ViaSafe palette -->
+    <color name="viasafe_bg">#F7EFE6</color>
+    <color name="viasafe_bg_top">#FBF6EF</color>
+    <color name="viasafe_card">#F3E6DA</color>
+    <color name="viasafe_card_alt">#F9F2EA</color>
+    <color name="viasafe_border">#E6D7CA</color>
+    <color name="viasafe_text">#5A4A42</color>
+    <color name="viasafe_text_muted">#8C7B70</color>
+    <color name="viasafe_accent">#D7A08F</color>
+    <color name="viasafe_accent_dark">#C07C6D</color>
+    <color name="viasafe_sos">#D98B8B</color>
+    <color name="viasafe_sos_glow">#F2C1B5</color>
+
+    <!-- Legacy Material colors used by components -->
+    <color name="purple_500">#D7A08F</color>
+    <color name="purple_700">#C07C6D</color>
+    <color name="teal_200">#E8D7C8</color>
+    <color name="teal_700">#B78B7D</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+</resources>
+

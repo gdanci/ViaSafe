@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">ViaSafe</string>
+
+    <!-- Bottom navigation -->
+    <string name="nav_map">Map</string>
+    <string name="nav_report">Report</string>
+    <string name="nav_safe_haven">Safe Havens</string>
+    <string name="nav_feed">Feed</string>
+    <string name="nav_profile">Profile</string>
+
+    <!-- Map / home -->
+    <string name="home_title">Safety Map</string>
+    <string name="home_subtitle">Safer routes for women, day and night</string>
+    <string name="btn_safe_route">Find safer route</string>
+    <string name="btn_sos">SOS</string>
+    <string name="label_night_mode">Night mode</string>
+    <string name="legend_safe">Safe</string>
+    <string name="legend_caution">Caution</string>
+    <string name="legend_warning">Warning</string>
+    <string name="legend_danger">Danger</string>
+    <string name="label_route_hint">Route from my location</string>
+    <string name="btn_route">Get route</string>
+    <string name="btn_clear_route">Clear route</string>
+    <string name="btn_open_pin_types">Pinpoint type</string>
+    <string name="btn_open_route_panel">Route (start/end)</string>
+    <string name="btn_back">Back</string>
+    <string name="label_route_steps">Tap “Set start”, then tap the map. Then “Set end”.</string>
+    <string name="btn_set_start">Set start</string>
+    <string name="btn_set_end">Set end</string>
+    <string name="btn_use_my_location">Use my location as start</string>
+
+    <!-- Report -->
+    <string name="pin_type_label">Pinpoint type</string>
+    <string name="pin_type_group">Suspicious group ⚠️</string>
+    <string name="pin_type_harassment">Harassment incident, temporary danger 🚨</string>
+    <string name="pin_type_lighting">Poor lighting 🌙</string>
+    <string name="pin_type_isolated">Isolated area 📍</string>
+    <string name="report_title">Report something</string>
+    <string name="report_subtitle">Help other women avoid unsafe places</string>
+    <string name="hint_report_title">Short title</string>
+    <string name="hint_report_description">Describe what happened or what you saw</string>
+    <string name="hint_report_location">Use current location or pick on map</string>
+    <string name="chip_category_harassment">Harassment incident, temporary danger 🚨</string>
+    <string name="chip_category_group">Suspicious group ⚠️</string>
+    <string name="chip_category_followed">Poor lighting 🌙</string>
+    <string name="chip_category_other">Isolated area 📍</string>
+    <string name="label_time_now">Just now</string>
+    <string name="label_time_recent">Last 24 hours</string>
+    <string name="label_time_older">Older</string>
+    <string name="label_anonymous">Report anonymously</string>
+    <string name="btn_mark_location">Mark location</string>
+    <string name="btn_submit_report">Submit report</string>
+    <string name="btn_upvote_pin">Upvote pin</string>
+
+    <!-- Safe havens -->
+    <string name="safe_haven_title">Safe havens</string>
+    <string name="safe_haven_subtitle">We guide you to open, trusted places</string>
+    <string name="safe_haven_hospitals">Hospitals</string>
+    <string name="safe_haven_police">Police stations</string>
+    <string name="safe_haven_pharmacy">24/7 pharmacies</string>
+    <string name="safe_haven_coffee">24/7 coffee shops</string>
+    <string name="btn_navigate_safe_haven">Guide me there</string>
+
+    <!-- Feed -->
+    <string name="feed_title">Safety feed</string>
+    <string name="feed_subtitle">Recent reports around you</string>
+    <string name="label_verified">Verified</string>
+    <string name="label_unverified">Single report</string>
+    <string name="label_upvote">Helpful</string>
+
+    <!-- Profile / privacy -->
+    <string name="profile_title">Privacy &amp; safety</string>
+    <string name="profile_subtitle">Control who can see your location</string>
+    <string name="label_location_sharing">Share live location</string>
+    <string name="label_location_contacts">Trusted contacts</string>
+    <string name="label_add_contact">Add contact</string>
+    <string name="label_sos_settings">SOS &amp; fake call</string>
+    <string name="label_sos_message">Default message</string>
+    <string name="label_not_for_emergency">Not for emergencies. Call 112 if you are in danger.</string>
+
+    <!-- SOS bottom sheet -->
+    <string name="sos_title">SOS &amp; live tracking</string>
+    <string name="sos_description">We will share your live location with selected contacts and trigger a fake call. This is not a replacement for emergency services.</string>
+    <string name="btn_start_sos">Start SOS</string>
+    <string name="btn_cancel_sos">Cancel</string>
+
+    <!-- Home redesign -->
+    <string name="home_brand">ViaSafe</string>
+    <string name="home_welcome_line">Welcome back,</string>
+    <string name="home_welcome_name">Sarah!</string>
+    <string name="home_quick_actions">Safety Quick Actions</string>
+    <string name="home_curated_message">Curated safety message</string>
+    <string name="action_safe_routes">Safe\nRoutes</string>
+    <string name="action_share_status">Share\nStatus</string>
+    <string name="action_safe_havens">Safe\nHavens</string>
+    <string name="action_safety_zone_map">Safety Zone\nMap</string>
+    <string name="action_pin_point_map">Pin Point\nMap</string>
+    <string name="curated_tip_1">Your top-rated safe routes</string>
+    <string name="curated_tip_2">New community-verified report</string>
+    <string name="curated_tip_3">Weekly safety tip</string>
+    <string name="label_sos_trigger">SOS Trigger</string>
+    <string name="label_sos_sent">SOS sent to your contacts with your location.</string>
+    <string name="google_maps_key">AIzaSyBHzq7Q4Nw9UOLP9Smhyw7TvM_-AmXHVYw</string>
+    <string name="title_safety_zone_map">Safety Zone Map</string>
+    <string name="title_pin_point_map">Pin Point Map</string>
+    <string name="btn_use_location">Use this location</string>
+
+</resources>
+
+
